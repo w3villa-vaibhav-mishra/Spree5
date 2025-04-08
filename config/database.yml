@@ -23,8 +23,8 @@ development: &development
   <<: *default
   database: spree_starter_development
   host: <%= ENV.fetch('DB_HOST', 'localhost') %>
-  username: <%= ENV.fetch('DB_USER', 'postgres') %>
-  password: <%= ENV.fetch('DB_PASSWORD', 'password') %>
+  username: test_user
+  password: your_password
   port: <%= ENV.fetch('DB_PORT', 5432) %>
   # On MacOS some users are reporting crashes when first trying to access
   # the database. This workaround was suggested in this issue on `ruby-pg`:
